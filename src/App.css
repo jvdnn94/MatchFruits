@@ -1,0 +1,25 @@
+@import "tailwindcss";
+#root {
+ 
+  margin: 1rem ;
+  padding: 2rem;
+  text-align: center;
+  
+  background-color:rgb(200,180,190);
+}
+.Card-Front {
+  opacity:1;
+  z-index:10;
+}
+.Card-Back {
+  display:none;
+  
+}
+.Card.Flipped .Card-Front {
+display:none
+}
+
+.Card.Flipped .Card-Back {
+  display:flex;
+}
+
